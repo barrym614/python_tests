@@ -1,1 +1,9 @@
-requests
+# Runtime Python dependencies (install with `pip install -r requirements.txt`)
+requests>=2.31.0
+
+# Notes:
+# - The Tkinter GUI uses the standard-library `tkinter` package which is provided
+#   by your OS distribution (for example, install `python3-tk` on Debian/Ubuntu).
+#   Tkinter is not installable via pip.
+# - For headless environments (CI or servers without a display) you may need
+#   the `xvfb` system package and to run the app with `xvfb-run`.
